@@ -1,0 +1,105 @@
+<!-- header bar -->
+<div class="row header w-100 p-0 m-0">
+    <div class="col-12 mt-3 ml-5" style="font-size: 50px; color: rgb(251, 251, 251);font-family:monospace">
+        Blue Bird
+    </div>
+</div>
+
+<!-- video -->
+<div class="row p-0 m-0 mt-5 ">
+    <div class="col-2"></div>
+    <div class="col-8" style="height: 450px;">
+        <iframe class="w-100 h-100" src="https://www.youtube.com/embed/FtNPMKlHPBg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-2"></div>
+</div>
+
+<!-- program training -->
+<div class="row mt-5 w-100 p-0 m-0">
+    <div class="col-1 p-0 m-0"></div>
+    <div class="col-10 p-0 m-0">
+        <div class="row p-0 m-0">
+            <div class="col-5 p-0 ml-5" id="myDiv" style="height: 530px; overflow: hidden;"></div>
+            <div class="col-5 p-0 m-0">
+                <form [formGroup]="programForm" class="form-signin" (ngSubmit)="onSubmit()">
+                    <div class="row p-0 m-0 mb-4">
+                        <div class="col-4 p-0 m-0 center bold">Command</div>
+                        <div class="col-4 p-0 m-0 center bold">Input X</div>
+                        <div class="col-4 p-0 m-0 center bold">Description</div>
+                    </div>
+                    <div class="row p-0 m-0 mb-5">
+                        <div class="col-4 p-0 m-0 center">Up</div>
+                        <div class="col-1 p-0 m-0"></div>
+                        <input type="number" class="form-control col-2 p-0 m-0 center" formControlName="up">
+                        <div class="col-1 p-0 m-0"></div>
+                        <div class="col-4 p-0 m-0 center">Ascend to "X" cm.</div>
+                    </div>
+                    <div class="row p-0 m-0 mb-5">
+                        <div class="col-4 p-0 m-0 center">Down</div>
+                        <div class="col-1 p-0 m-0"></div>
+                        <input type="number" class="form-control col-2 p-0 m-0 center" formControlName="down">
+                        <div class="col-1 p-0 m-0"></div>
+                        <div class="col-4 p-0 m-0 center">Descend to "X" cm.</div>
+                    </div>
+                    <div class="row p-0 m-0 mb-5">
+                        <div class="col-4 p-0 m-0 center">Left</div>
+                        <div class="col-1 p-0 m-0"></div>
+                        <input type="number" class="form-control col-2 p-0 m-0 center" formControlName="left">
+                        <div class="col-1 p-0 m-0"></div>
+                        <div class="col-4 p-0 m-0 center">Fly left to "X" cm.</div>
+                    </div>
+                    <div class="row p-0 m-0 mb-5">
+                        <div class="col-4 p-0 m-0 center">Right</div>
+                        <div class="col-1 p-0 m-0"></div>
+                        <input type="number" class="form-control col-2 p-0 m-0 center" formControlName="right">
+                        <div class="col-1 p-0 m-0"></div>
+                        <div class="col-4 p-0 m-0 center">Fly right to "X" cm.</div>
+                    </div>
+                    <div class="row p-0 m-0 mb-5">
+                        <div class="col-4 p-0 m-0 center">Forward</div>
+                        <div class="col-1 p-0 m-0"></div>
+                        <input type="number" class="form-control col-2 p-0 m-0 center" formControlName="forward">
+                        <div class="col-1 p-0 m-0"></div>
+                        <div class="col-4 p-0 m-0 center">Fly forward to "X" cm.</div>
+                    </div>
+                    <div class="row p-0 m-0">
+                        <div class="col-4 p-0 m-0 center">Back</div>
+                        <div class="col-1 p-0 m-0"></div>
+                        <input type="number" class="form-control col-2 p-0 m-0 center" formControlName="backward">
+                        <div class="col-1 p-0 m-0"></div>
+                        <div class="col-4 p-0 m-0 center">Fly backward "X" cm.</div>
+                    </div>
+                    <button class="btn btn-primary btn-block mt-5 mx-auto" style="width:80%;" type="submit">Run</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-1 p-0 m-0"></div>
+</div>
+
+
+<!-- info present -->
+<div class="row mt-5 w-100 p-0 m-0">
+    <div class="col-1 p-0 m-0"></div>
+    <div class="col-10 p-0 m-0">
+        <div class="row">
+            <div class="col-4">
+                <div class="p-0 m-0"><img
+                        src="../../assets/TelloLogo.png">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-0 m-0"><img
+                        src="../../assets/FunAndLearn.png">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-0 m-0"><img
+                        src="../../assets/KidsCoding.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-1 p-0 m-0"></div>
+
+</div>
